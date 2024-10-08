@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de blockquote</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        blockquote {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #4CAF50;
+            font-style: italic;
+        }
+        blockquote:before {
+            content: "“";
+            font-size: 2em;
+            vertical-align: top;
+        }
+        blockquote:after {
+            content: "”";
+            font-size: 2em;
+        }
+        cite {
+            display: block;
+            text-align: right;
+            font-style: normal;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo de uso del elemento blockquote</h1>
+    <p>El elemento <code>blockquote</code> se usa para citar textos largos de una fuente externa. A continuación, un ejemplo:</p>
+
+    <blockquote cite="https://es.wikiquote.org/wiki/Albert_Einstein">
+        La imaginación es más importante que el conocimiento. El conocimiento es limitado, la imaginación rodea al mundo.
+        <cite>– Albert Einstein</cite>
+    </blockquote>
+
+    <p>El ejemplo anterior cita una frase famosa de Albert Einstein y muestra cómo se puede usar el atributo <code>cite</code> para referenciar la fuente.</p>
+
+</body>
+</html>
